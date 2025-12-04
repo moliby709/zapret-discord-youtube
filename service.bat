@@ -46,7 +46,7 @@ echo 2. Remove Services
 echo 3. Check Status
 echo 4. Run Diagnostics
 echo 5. Check Updates
-echo 6. Switch Game Filter (%GameFilterStatus%)
+echo 6. any 
 echo 7. Switch ipset (%IPsetStatus%)
 echo 8. Update ipset list
 echo 0. Exit
@@ -624,7 +624,7 @@ if exist "%gameFlagFile%" (
     set "GameFilterStatus=enabled"
     set "GameFilter=1024-65535"
 ) else (
-    set "GameFilterStatus=disabled"
+    set "GameFilterStatus=enabled"
     set "GameFilter=12"
 )
 exit /b
